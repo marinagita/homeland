@@ -1,0 +1,1204 @@
+*{
+    /* внешний отступ */
+    margin: 0;
+    /* внутренний отступ */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+   margin: 0 auto;
+}
+
+
+
+.container {
+    margin: 0px 100px;
+    height: 100px;
+
+}
+
+.header {
+    font-family: Satoshi;
+    background-color: #3D5DDB;
+    /*height: 100px;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    /*max-width: 1440px*/;
+   
+}
+
+.header-line {
+    padding-top: 24px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text {
+    justify-content: right;
+    display: flex;
+}
+
+
+.logo-text {
+    margin-left: 10px;
+    font-family: Satoshi;
+    color: #fff;
+    font-size: 44.516px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 104%;  
+}
+
+.nav-item {
+    font-family: Satoshi;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 24px;
+}
+
+.burger {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: none;
+}
+.burger > img {
+    width: 100%
+}
+
+.line {
+    width: 100%;
+    height: 1px; /* толщина линии */
+    background-color: #FFFFFF33; /* белый цвет линии */
+    margin: 0; /* убираем отступы */}
+
+
+    /* Кнопка "Наверх" */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3D5DDB;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* скрыта по умолчанию */
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-top:hover {
+    transform: scale(1.1);
+}
+
+/* Таймер обратного отсчёта */
+.countdown {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f6f6f6;
+}
+
+#timer {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3D5DDB;
+}
+
+/* Всплывающее окно подписки */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3D5DDB;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #2a47b3;
+} 
+
+
+.MainScreen {
+    font-family: Satoshi;
+   background: #3D5DDB;
+   max-height: 900px;
+  /* max-width: 1440px; */
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 150px 150px 150px 150px;
+   position: relative;
+   margin: 0 auto; 
+}
+.main-img {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: inherit;
+    max-width: 100%; /* изображение адаптивное */
+    height: auto;
+}
+
+h1 {
+    /* максимальное значение ширины блока */
+    max-width: 586px;
+    color: white;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px; /* 110% */
+    margin-bottom: 40px;
+    font-family: Satoshi;
+   
+}
+
+.break-word {
+    display: inline-block;
+    word-break: break-word;
+    white-space: normal;
+}
+.MainP {
+    font-family: Satoshi;
+    max-width: 393px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    margin-bottom: 40px;
+}
+
+.button {
+    font-family: Satoshi;
+    background: #171717;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%;
+    max-width: 160px;
+    display: inline-flex;
+    padding: 12px 35px;
+    justify-content: center;
+    align-items: center;
+}
+ .woman {
+    font-family: Satoshi;
+    background-color: white;
+    /*max-height: 827px;*/
+    background-size: cover;
+    padding: 130px 100px 130px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*max-width: 1440px;*/
+    margin: 0 auto;
+ }
+
+/*.woman-image {
+    max-width: 487px;
+    max-height: 574px;
+    margin-right: 100px;
+    
+}*/
+
+
+ .title2 {
+    width: 557px;
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+    margin-bottom: 35px;
+ }
+
+.SecondP {
+    font-family: Satoshi;
+    width: 487px;
+    margin-bottom: 40px;
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%;
+}
+
+.button2 {
+    font-family: Satoshi;
+    background: #171717;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%;
+    max-width: 160px;
+    display: inline-flex;
+    padding: 12px 35px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sec-fluid {
+
+    /* для полномасштабных фоновых изобюражений */
+    background: url(another\ building.jpg) center/cover no-repeat;
+    display: flex;
+    /*главная ось*/
+    justify-content: center;
+    /* поперечная ось */
+    align-items: center;
+    height: 900px; /* Высота равна высоте экрана */
+    box-sizing: border-box;
+    /*max-width: 1440px;*/
+    margin: 0 auto;
+}
+
+.centered-image {
+  /*  max-width: 1440px;*/
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.sectionmy {
+    padding: 120px 150px;
+}
+
+.section-cards{
+    display: flex;
+    align-items: center;
+
+}
+
+.cardmy {
+    margin-right: 30px;
+
+}
+.card-img{
+    margin-bottom: 32px;
+
+}
+
+.titlemy {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%; /* 74.2px */
+    width: 557px;
+    margin-bottom: 56px;
+}
+
+.card-name{
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 104.5%; 
+    margin-bottom: 18px;
+    }
+
+.room{
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 168.5%; /* 30.33px */
+    margin-bottom: 4px;
+}
+
+.location-and-icon{
+display: flex;
+margin-bottom: 15px;
+}
+
+.location-img {
+    width: 18px;
+    height: 18px;
+}
+
+.location{
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%; /* 26.96px */
+}
+
+.price{
+    color: #3D5DDB;
+    font-family: Satoshi;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 104.5%; /* 29.26px */
+}
+
+
+
+.brands {
+    
+    margin: 0 150px 190px 150px;
+
+}
+
+.brands-items {
+
+    display: flex;
+    margin-right: 48px;
+    align-items: center;
+
+
+}
+
+.brand-img {
+    margin-right: 48px;
+}
+
+.arrows {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+
+}
+
+.clientsayhead {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+    text-align: left;
+    margin-right: 215px;
+}
+
+.arrow-items {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.arrow-grey {
+    margin-right: 60px;
+}
+
+
+.comments {
+   /* max-width: 1440px;*/
+    max-height: 900px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comments-left {
+    margin-right: 30px;
+}
+
+.quote {
+    margin-bottom: 32px;
+}
+.main-textcomment {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106%;
+    margin-bottom: 32px;
+    max-width: 557px;
+}
+
+.sup-textcomment {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%;
+    margin-bottom: 38px;
+    max-width: 491px;
+}
+
+.businessman {
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.businessman-item {
+    max-width: 45%;
+    display: flex;
+    align-items: center;
+
+}
+
+.teams-img {
+    margin-right: 18px;
+}
+
+.businessman-txt {
+    padding-left: 20px;
+    white-space: nowrap;
+}
+.businessman-title {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106%; 
+}
+
+.businessman_subtitle {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%
+}
+
+.two {
+  /*  max-width: 1440px;*/
+    margin: 0;
+    box-sizing: border-box;
+}
+.partners {
+    background-color: #F6F6F6;
+    max-width: 1097px;
+    max-height: 623px;
+    padding: 120px 0 120px 150px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+.partners-text {
+    max-width: 557px;
+
+    
+}
+.partners-head {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+}
+
+.partners-subtitle {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%;
+    max-width: 518px;
+}
+
+.mail {
+    background-color: #3D5DDB;
+    max-width: 608px;
+    max-height: 673px;
+    padding: 65px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 2;
+    margin-top: -500px;
+}
+
+.nametext {
+    color: #FFF;
+    font-family: Satoshi;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+    margin-bottom: 32px;
+}
+
+.realname {
+    color: white;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%; 
+    margin-bottom: 12px;
+}
+
+.line2 {
+    max-width: 458px;
+    height: 1px; /* толщина линии */
+    background-color: #FFFFFF33; /* белый цвет линии */
+    margin: 0; /* убираем отступы */
+    margin-bottom: 32px;
+}
+
+.line3 {
+    width: 458px;
+    height: 1px; /* толщина линии */
+    background-color: #FFFFFF33; /* белый цвет линии */
+    margin-top: 130px;
+    margin-bottom: 45px;
+    margin-left: 0;
+
+}
+
+.button3 {
+    font-family: Satoshi;
+    background: #171717;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%;
+    max-width: 160px;
+    display: inline-flex;
+    padding: 12px 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-solution {
+    max-width: 360px
+}
+.Main_h3 {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+    margin-bottom: 24px;
+    
+}
+
+.p2022 {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.5%;
+}
+
+.footer {
+    max-width: 1440px;
+    padding: 120px 150px;
+
+}
+.footer-flex {
+    display: flex;
+    /* выравнивание */
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.footer-head {
+    margin-right: 250px;
+}
+.footer-solution {
+    width: 40%;
+    max-width: 430px;
+}
+
+.servicehead {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+    margin-bottom: 42px;
+}
+.servicetext {
+    color: #171717;
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.footer-Service {
+    margin-right: 80px;
+}
+
+.footer-contact {
+    margin-right: 80px;
+}
+
+
+
+.left-flex {
+    display: flex;
+    max-width: 526px;
+    justify-content: space-between;
+    align-items: flex-start;
+    white-space: nowrap;
+    margin-left: 150px;
+}
+
+
+@media (max-width: 1360px) {
+    .main-img {
+        width: 45%;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1235px) {
+    .main-img {
+        width: 40%;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-cards {
+        flex-wrap: wrap;
+    }
+    .card.my{
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+        .price {
+            margin-bottom: 15px;
+        }
+
+        .brands {
+            margin:0 70px 90px;
+        }
+        .main-img {
+            width: 40%;
+        }
+        
+    .MainScreen{
+    padding: 80px 130px 80px 130px;
+    }
+        .woman {
+            padding: 80px 100px 80px 100px;
+            justify-content: space-around;
+        }
+
+        .title2 {
+            font-size: 60px;
+    }
+        .containermy {
+            display: flex;
+            flex-direction: column;
+    }
+    .comments-left {
+        margin-right: 60px;
+    }
+    .section-cards {
+        justify-content: space-around;
+    }
+    .mail {
+        max-width: 458px;
+    }
+    .partners {
+        max-width: 858px;
+    }
+    
+    .footer {
+        padding: 130px 100px;
+    }
+    .footer-head {
+        margin-right: 80px;
+    }
+    .footer-Service {
+        margin-right: 50px;
+    }
+    .footer-contact {
+        margin-right: 50px;
+    }
+    .brands-items {
+        display: flex;
+        justify-content: space-around;
+    }
+    }
+
+
+@media (max-width: 1280px) {
+    .main-img {
+        /*width: 500px;*/
+        align-items: center;
+       
+        margin-bottom: 0;
+    }
+    .brands-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-cards {
+        flex-wrap: wrap;
+    }
+    .card.my{
+    
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+        
+        .price {
+            margin-bottom: 15px;
+        }
+    
+    .left-flex {
+        margin-left: auto;
+    }
+    .partners-head {
+        font-size: 50px;
+    }
+    .partners-subtitle {
+        max-width: 400px;
+    }
+    .title2 {
+        width: auto;
+    }
+    .SecondP {
+        width: auto;
+    }
+    }
+
+
+
+
+@media (max-width: 768px) {
+    .main-img {
+        max-width: 35%;
+    }
+
+    h1 {
+        font-size: 65px;
+
+        line-height: 68px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+        .burger {
+            display: block;
+            position: absolute;
+            margin-left: 500px;
+    
+        }
+
+        .container{
+            margin: 0 70px;
+            
+        } 
+
+        .header-logo {
+            position: relative;
+            margin-right: 370px;
+            margin-left: auto;
+            width: 40%;
+        }
+        .woman {
+            padding: 100px;
+        }
+        .woman-image > .container_2 {
+            font-size: 45px;
+            line-height: 60px;
+        }
+
+        .MainScreen {
+            padding: 100px;
+        }
+        .header-logo {
+            margin-right: 370px;
+        }
+        .woman-image {
+            max-width: 70%;
+        }
+        .MainP {
+            max-width: 360px
+        }
+        .arrows {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .comments {
+            padding-left: 100px;
+            padding-right: 110px;
+        }
+        .partners {
+            padding: 125px 0 125px 100px;
+            max-width: 650px;
+
+    }
+    .header-logo {
+        margin-right: 340px;
+    }
+    .Main_h3 {
+        font-size: 35px;
+    }
+    .servicehead {
+        font-size: 22px;
+    }
+    .servicetext {
+        font-size: 17px;
+    }
+    .clientsayhead {
+        margin-right: 100px;
+            font-size: 50px;
+    }
+    .arrow-items {
+        justify-content: flex-end;
+        flex-wrap: wrap;
+}
+}
+
+
+@media (max-width: 890px) {
+
+    .logo-text{
+        display: none;
+    }
+   
+   .burger {
+        display: block;
+        position: absolute;
+        margin-left: 500px;
+    }
+
+
+    .header-logo {
+        position: relative;
+        margin-right: 330px;
+        width: 40%;
+    }
+    .nav-item {
+        display: none;}
+
+        .burger {
+            display: block;
+            position: absolute;
+            margin-left: 600px;
+    
+        }
+        .woman-image {
+            max-width: 60%;
+        }
+        .title2 {
+            font-size: 40px;
+        }
+        .brands-items {
+            margin-right: 0;
+        }
+        .clientsayhead {
+            margin-right: 150px;
+        }
+        .mail {
+            margin-top: -100px;
+        }
+        .partners {
+            max-width: 700px;
+        }
+        .Main_h3 {
+            font-size: 45px;
+        }
+        .footer-head {
+            margin-right: 40px;
+        }
+        .footer-Service {
+            margin-right: 30px;
+        }
+        .footer-contact {
+            margin-right: 30px;
+        }
+
+}
+
+    @media (max-width: 650px) {
+
+    .MainScreen { 
+        padding: 100px 70px;
+    }
+    .MainScreen > h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .burger {
+        margin-left: 470px;
+    }   
+    .MainP {
+        max-width: 335px;
+    }
+    .containermy {
+        align-items: flex-start;
+    }
+    .brand-img {
+        max-width: 50%;
+    }
+    .arrows {
+        margin-right: 165px;
+    }
+    .footer-flex {
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+}
+.left-flex {
+    margin-left: 135px;
+}
+}
+
+@media (max-width: 580px) {
+.left-flex {
+    margin-left: 30px;
+}
+.Main_h3 {
+    margin-top: 20px;
+}
+.sectionmy {
+    padding: 90px 100px;
+}
+.titlemy {
+    font-size: 60px;
+}
+.comments {
+    flex-wrap: wrap;
+    max-height: none;
+}
+.comments-left {
+    margin-bottom: 70px;
+}
+}
+
+@media (max-width: 535px) {
+.brand-img {
+    margin-bottom: 20px;
+}
+
+.clientsayhead {
+    margin-right: 100px;
+}
+.mail {
+    margin-top: -50px;
+}
+.partners-head {
+    font-size: 40px;
+}
+.arrows {
+    margin-right: auto;
+}
+.partners-text {
+    max-width: 328px;
+}
+.line3 {
+    width: auto;
+}
+.burger {
+    margin-left: 400px;}
+}
+.sec-fluid {
+    height: 700px;
+}
+
+
+@media (max-width: 430px){
+    .titlemy {
+    font-size: 50px;
+    }
+    .card-img {
+        max-width: 90%;
+    }
+    .sectionmy {
+        padding: 90px 70px;
+    }
+    .arrows {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .clientsayhead {
+        margin-right: 50px;
+        font-size: 40px;
+    }
+    .arrow-grey {
+        max-width: 50%;
+    }
+    .arrow-black {
+        max-width: 80%;
+    }
+    .comments {
+        padding-left: 70px; 
+        padding-right: 70px;
+    }
+    .partners {
+        max-width: 350px;
+        padding: 40px 0 70px 70px;
+    }
+    .partners-head {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .partners-subtitle {
+        max-width: 240px;
+        font-size: 15px;
+    }
+    .mail {
+        margin-top: -30px;
+        max-width: 350px;
+        max-height: 550px;
+        padding: 40px;
+    }
+    .line3 {
+        margin-top: 50px;
+    }
+    .footer {
+        padding: 80px 70px;
+    }
+    .servicetext {
+        display: none;
+    }
+    .Main_h3 {
+        font-size: 45px;
+        margin-top: -140px;
+    }
+    .left-flex {
+        margin-left: 235px;
+        flex-direction: column;
+    }
+    .servicehead {
+        margin-bottom: 10px;
+    }
+    .header-logo {
+        position: relative;
+        margin-right: 250px;}
+
+        .burger {
+            margin-left: 290px;
+        }
+}
+
+@media (max-width: 380px){
+.left-flex {
+    margin-left: 180px;
+}
+.Main_h3 {
+    font-size: 35px;
+}
+.header-logo {
+    margin-right: 230px;}
+
+.burger {
+    margin-left: 260px;
+}
+.MainScreen {
+    padding: 50px;
+}
+.woman-image {
+    display: none;
+}
+.woman {
+    padding: 50px;
+}
+.sec-fluid {
+    height: 600px;
+}
+.sectionmy {
+    padding: 70px 50px;
+}
+.brands {
+    margin: 0 50px 70px;
+}
+.arrows {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.comments {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.partners {
+    padding: 40px 0 70px 50px;
+    max-width: 300px;
+}
+.mail {
+    max-width: 300px;
+}
+.footer {
+    padding: 80px 50px;
+}
+}
